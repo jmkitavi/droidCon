@@ -52,6 +52,11 @@
 		E6722D138DF346558F29E8CF /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5133943139D140BE8AF55913 /* Octicons.ttf */; };
 		DEC610FA07E14537991CF36C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A445C06EE63C4D578BAE90A7 /* SimpleLineIcons.ttf */; };
 		945D842A134A423089A0963F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD771258ECC64296AD47EE8A /* Zocial.ttf */; };
+		ACB7236744E34B20BD63A77D /* DINPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF47538ECAAE44A080610E05 /* DINPro-Black.ttf */; };
+		287E09CDD63C45528D975FB0 /* DINPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5B0EC66B988446EA77B06C8 /* DINPro-Bold.ttf */; };
+		A3B081A0D9AF48FCB1FF6D66 /* DINPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A369211BE4164B1CB352BF84 /* DINPro-Light.ttf */; };
+		22D92A23D5844100ACA3B94A /* DINPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADA32D2DB0164ABA9860304C /* DINPro-Medium.ttf */; };
+		925332AFE223493BB2D38E21 /* DINPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74310202D6E44E9593FE6CDE /* DINPro-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,6 +378,11 @@
 		5133943139D140BE8AF55913 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A445C06EE63C4D578BAE90A7 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		DD771258ECC64296AD47EE8A /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF47538ECAAE44A080610E05 /* DINPro-Black.ttf */ = {isa = PBXFileReference; name = "DINPro-Black.ttf"; path = "../assets/fonts/DINPro-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5B0EC66B988446EA77B06C8 /* DINPro-Bold.ttf */ = {isa = PBXFileReference; name = "DINPro-Bold.ttf"; path = "../assets/fonts/DINPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A369211BE4164B1CB352BF84 /* DINPro-Light.ttf */ = {isa = PBXFileReference; name = "DINPro-Light.ttf"; path = "../assets/fonts/DINPro-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ADA32D2DB0164ABA9860304C /* DINPro-Medium.ttf */ = {isa = PBXFileReference; name = "DINPro-Medium.ttf"; path = "../assets/fonts/DINPro-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		74310202D6E44E9593FE6CDE /* DINPro-Regular.ttf */ = {isa = PBXFileReference; name = "DINPro-Regular.ttf"; path = "../assets/fonts/DINPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -653,6 +663,11 @@
 				5133943139D140BE8AF55913 /* Octicons.ttf */,
 				A445C06EE63C4D578BAE90A7 /* SimpleLineIcons.ttf */,
 				DD771258ECC64296AD47EE8A /* Zocial.ttf */,
+				CF47538ECAAE44A080610E05 /* DINPro-Black.ttf */,
+				A5B0EC66B988446EA77B06C8 /* DINPro-Bold.ttf */,
+				A369211BE4164B1CB352BF84 /* DINPro-Light.ttf */,
+				ADA32D2DB0164ABA9860304C /* DINPro-Medium.ttf */,
+				74310202D6E44E9593FE6CDE /* DINPro-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1118,6 +1133,11 @@
 				E6722D138DF346558F29E8CF /* Octicons.ttf in Resources */,
 				DEC610FA07E14537991CF36C /* SimpleLineIcons.ttf in Resources */,
 				945D842A134A423089A0963F /* Zocial.ttf in Resources */,
+				ACB7236744E34B20BD63A77D /* DINPro-Black.ttf in Resources */,
+				287E09CDD63C45528D975FB0 /* DINPro-Bold.ttf in Resources */,
+				A3B081A0D9AF48FCB1FF6D66 /* DINPro-Light.ttf in Resources */,
+				22D92A23D5844100ACA3B94A /* DINPro-Medium.ttf in Resources */,
+				925332AFE223493BB2D38E21 /* DINPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

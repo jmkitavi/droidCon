@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, StatusBar } from 'react-native';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
-// import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
@@ -9,6 +8,7 @@ import Home from './components/Home';
 import Schedule from './components/Schedule';
 import Speakers from './components/Speakers';
 import Sponsors from './components/Sponsors';
+import Header from './components/common/Header';
 
 const TabNavigator =  createMaterialBottomTabNavigator({
   Home: {
@@ -67,6 +67,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
+        <StatusBar
+          backgroundColor="#2E260D"
+          barStyle="light-content"
+        />
         <TabNavigator />
       </View>
     )

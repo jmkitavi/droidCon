@@ -69,6 +69,11 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>DINPro-Black.ttf</string>
+		<string>DINPro-Bold.ttf</string>
+		<string>DINPro-Light.ttf</string>
+		<string>DINPro-Medium.ttf</string>
+		<string>DINPro-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
