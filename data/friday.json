@@ -1,0 +1,23 @@
+[
+	{"time": "08:00", "title": "Arrival and Registration", "description": "08:00 - 09:00", "circleColor": "#009688"},
+	{"time": "09:00", "title": "KeyNote", "description": "09:00 - 10:00 \nMain Hall", "circleColor": "#009688"},
+	{"time": "10:00", "title": "Constraint Layout 2.0", "description": "Thomas Kioko\n10:00-10:50 - Room 1", "circleColor": "red"},
+	{"time": "10:00", "title": "Software craftmanship-Becoming a better android developer", "description": "Seth Kigen\n10:00-10:50 - Room 2", "circleColor": "red"},
+	{"time": "10:00", "title": "To Inject or not inject - Dependency injection in a Kotlin world", "description": "Danny Preussler\n10:00-10:50 - Room 3", "circleColor": "red"},
+	{"time": "11:00", "title": "Xamarin for Android: A Primer", "description": "Ernest Ndung'u\n11:00-11:50 - Room 1", "circleColor": "green"},
+	{"time": "11:00", "title": "Retrofiti:A Pragmatic Approach to using Retrofit in Android", "description": "Roger Taracha\n11:00-11:50 - Room 2", "circleColor": "green"},
+	{"time": "11:00", "title": "Designing & Building a real Android app with Material Tools & Components", "description": "Nick Rout\n11:00-11:50 - Room 3", "circleColor": "green"},
+	{"time": "12:00", "title": "GraphQL on Android", "description": "Emmanuel Mutua\n12:00-12:50 - Room 1", "circleColor": "blue"},
+	{"time": "12:00", "title": "Jetpack: An Overview", "description": "Eston Karumbi\n12:00-12:50 - Room 2", "circleColor": "blue"},
+	{"time": "12:00", "title": "Continous Intergration on Android", "description": "Stephen Ebichondo\n12:00-12:50 - Room 3", "circleColor": "blue"},
+	{"time": "1:00", "title": "Lunch", "description": "01:00-02:00"},
+	{"time": "2:00", "title": "BreakOut-Interaction", "description": "02:00-03:00"},
+	{"time": "3:00", "title": "Async Operations with Kotlin Coroutines", "description": "Mayowa Adegeye\n03:00-03:50 - Room 1", "circleColor": "red"},
+	{"time": "3:00", "title": "Android Room", "description": "Valentine Rutto\n03:00-03:50 - Room 2", "circleColor": "red"},
+	{"time": "3:00", "title": "Android Things", "description": "Marvin Collins & Harun Wangereka\n03:00-03:50 - Room 3", "circleColor": "red"},
+	{"time": "4:00", "title": "Bulding Trust in An Android World", "description": "Somet Kipchilat\n04:00-4:50 - Room 1", "circleColor": "green"},
+	{"time": "4:00", "title": "Creating Machine Learning On Android", "description": "Felicity Mecha\n04:00-4:50 - Room 2", "circleColor": "green"},
+	{"time": "4:00", "title": "React Native for Android", "description": "Kitavi Joseph\n04:00-4:50 - Room 3", "circleColor": "green"},
+	{"time": "5:00", "title": "So You Can Develop ANDROID Apps What Next?", "description": "5:00-6:00"},
+	{"time": "6:35", "title": "droidconKE bash", "description": "Party\n "}
+]

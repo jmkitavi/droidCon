@@ -1,0 +1,19 @@
+[
+	{"time": "08:00", "title": "Arrival and Registration", "description": "08:00 - 09:00", "circleColor": "#009688"},
+	{"time": "09:00", "title": "KeyNote", "description": "09:00 - 10:00 \nMain Hall", "circleColor": "#009688"},
+	{"time": "10:00", "title": "Android Architecture", "description": "Juma Allan & Remy Mumoh\n10:00-10:50 - Room 1", "circleColor": "red"},
+	{"time": "10:00", "title": "Android City:On the walls of Kotlin Street", "description": "Temidayo Adefioye\n10:00-10:50 - Room 2", "circleColor": "red"},
+	{"time": "10:00", "title": "Understanding your builds", "description": "Charles Muchene\n10:00-10:50 - Room 3", "circleColor": "red"},
+	{"time": "11:00", "title": "Judy's Session", "description": "Judy Ngure\n11:00-11:50 - Room 1", "circleColor": "green"},
+	{"time": "11:00", "title": "No Internet? No Problem", "description": "Moyinoluwa Adeyemi\n11:00-11:50 - Room 2", "circleColor": "green"},
+	{"time": "11:00", "title": "Cloud Firestore-Getting Started", "description": "Otieno Rowland\n11:00-11:50 - Room 3", "circleColor": "green"},
+	{"time": "12:00", "title": "Transforming Ideas With Flutter", "description": "Roina Ochieng & Dennis Riungu\n12:00-12:50 - Room 1", "circleColor": "blue"},
+	{"time": "12:00", "title": "Code Build Ship", "description": "Nathan Mkaya & Michael Bukachi\n12:00-12:50 - Room 2", "circleColor": "blue"},
+	{"time": "12:00", "title": "Android UI Testing", "description": "Clare Mburu\n12:00-12:50 - Room 3", "circleColor": "blue"},
+	{"time": "1:00", "title": "Lunch", "description": "01:00-02:00"},
+	{"time": "2:00", "title": "BreakOut-Interaction", "description": "02:00-03:00"},
+	{"time": "3:00", "title": "Data Binding and Kotlin", "description": "Eton Otieno\n03:00-03:50 - Room 1", "circleColor": "red"},
+	{"time": "3:00", "title": "Intergrating Mpesa Payments on Android Apps", "description": "Kevin Mulugu\n03:00-03:50 - Room 2", "circleColor": "red"},
+	{"time": "3:00", "title": "Breathe life into your App using Microsoft", "description": "Microsoft\n03:00-03:50 - Room 3", "circleColor": "red"},
+	{"time": "4:00", "title": "Sponsor Slot", "description": "04:00-4:50\n "}
+]
