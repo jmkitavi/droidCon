@@ -6,6 +6,7 @@ import {
   Image,
   StyleSheet,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import Header from './common/Header';
 import GridView from 'react-native-super-grid';
@@ -30,7 +31,10 @@ class Speakers extends Component {
                 style={styles.itemContainer}
                 source={{ uri: speaker.pic}}
               >
-                <TouchableOpacity style={styles.overlay} onPress={() => {}} />
+                <TouchableOpacity
+                  style={styles.overlay}
+                  onPress={() => Linking.openURL(`https://twitter.com/${speaker.twitter}`)}
+                />
                 <Text style={styles.itemName}>{speaker.name}</Text>
                 <Text style={styles.itemCode}>{speaker.job}</Text>
                 <Text style={styles.itemCode}>{speaker.twitter}</Text>

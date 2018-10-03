@@ -4,8 +4,9 @@ import {
   View,
   ImageBackground,
   Image,
-  TouchableHighlight,
+  TouchableOpacity,
   StyleSheet,
+  Linking,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Header from './common/Header';
@@ -46,15 +47,24 @@ class Home extends Component {
             </View>
 
             <View style={[styles.container, { flexDirection: 'row' }]} >
-              <TouchableHighlight style={styles.socialIcon}>
+              <TouchableOpacity
+                style={styles.socialIcon}
+                onPress={() => Linking.openURL('https://www.facebook.com/droidconke/')}
+              >
                 <Icon name='facebook' size={25} color='white' />
-              </TouchableHighlight>
-              <TouchableHighlight style={styles.socialIcon}>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.socialIcon}
+                onPress={() => Linking.openURL('https://twitter.com/droidconke')}
+                >
                 <Icon name='twitter' size={25} color='white' />
-              </TouchableHighlight>
-              <TouchableHighlight style={styles.socialIcon}>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.socialIcon}
+                onPress={() => Linking.openURL('https://www.instagram.com/droidconke/')}
+              >
                 <Icon name='instagram' size={25} color='white' />
-              </TouchableHighlight>
+              </TouchableOpacity>
             </View>
             </View>
         </ImageBackground>
