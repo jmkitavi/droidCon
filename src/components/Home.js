@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Linking,
+  ScrollView,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Header from './common/Header';
@@ -20,7 +21,7 @@ class Home extends Component {
           style={styles.bgImage}
           source={require('../../assets/img/bg.png')}
         >
-          <View style={[styles.container, { marginHorizontal: 20 }]}>
+          <ScrollView contentContainerStyle={[styles.container, { marginHorizontal: 20 }]}>
             <Image style={styles.droidConLogo} source={require('../../assets/img/droidcon.png')} />
             <Text style={styles.regularText}>
               First & largest ever Android Dev conference in Sub-Saharan Africa
@@ -66,7 +67,7 @@ class Home extends Component {
                 <Icon name='instagram' size={25} color='white' />
               </TouchableOpacity>
             </View>
-            </View>
+          </ScrollView>
         </ImageBackground>
       </View>
     );
