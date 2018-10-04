@@ -4,54 +4,121 @@ import {
   View,
   ImageBackground,
   StyleSheet,
+  ActivityIndicator,
 } from 'react-native';
+import axios from 'axios';
 import { createMaterialTopTabNavigator } from 'react-navigation';
 import Timeline from 'react-native-timeline-listview'
 import Header from './common/Header';
-import thurData from '../../data/thursday.json';
-import friData from '../../data/friday.json';
 
 
-const Thursday = () => {
-  return (
-    <View style={styles.container}>
-      <Timeline 
-        style={styles.list}
-        data={thurData}
-        circleSize={20}
-        circleColor='rgb(45,156,219)'
-        lineColor='#863D96'
-        timeContainerStyle={{ minWidth:52 }}
-        timeStyle={{textAlign: 'center', backgroundColor: "rgba(255,255,255,0)", color:'black', fontFamily: 'DINPro-Bold' }}
-        descriptionStyle={{ color:'gray', fontFamily: 'DINPro-Regular' }}
-        options={{
-          style: { paddingTop: 5 }
-        }}
-        renderFullLine={true}
-      />
-    </View>
+class  Thursday extends Component {
+  constructor() {
+    super();
+    this.state = { "schedule": [] };
+    this.fetch = this.fetch.bind(this);
+  }
+  componentDidMount() {
+    this.fetch();
+  }
+
+  fetch() {
+    const url = 'https://raw.githubusercontent.com/sirjmkitavi/droidCon/master/data/thursday.json';
+
+    return axios.get(url)
+      .then(response => {
+        console.log(response)
+        this.setState({
+          schedule: response.data,
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        {this.state.schedule.length < 1 ? (
+          <ActivityIndicator
+            color='black'
+            size={30}
+            style={{ marginTop: 30 }}
+          />
+        ):(
+        <Timeline 
+          style={styles.list}
+          data={this.state.schedule}
+          circleSize={20}
+          circleColor='rgb(45,156,219)'
+          lineColor='#863D96'
+          timeContainerStyle={{ minWidth:52 }}
+          timeStyle={{textAlign: 'center', backgroundColor: "rgba(255,255,255,0)", color:'black', fontFamily: 'DINPro-Bold' }}
+          descriptionStyle={{ color:'gray', fontFamily: 'DINPro-Regular' }}
+          options={{
+            style: { paddingTop: 5 }
+          }}
+          renderFullLine={true}
+        />
+        )}
+      </View>
   );
+  }
 }
 
-const Friday = () => {
-  return (
-    <View style={styles.container}>
-      <Timeline 
-        style={styles.list}
-        data={friData}
-        circleSize={20}
-        circleColor='rgb(45,156,219)'
-        lineColor='#863D96'
-        timeContainerStyle={{ minWidth:52 }}
-        timeStyle={{textAlign: 'center', backgroundColor: "rgba(255,255,255,0)", color:'black', fontFamily: 'DINPro-Bold' }}
-        descriptionStyle={{ color:'gray', fontFamily: 'DINPro-Regular' }}
-        options={{
-          style: { paddingTop: 5 }
-        }}
-        renderFullLine={true}
-      />
-    </View>
+class Friday extends Component {
+  constructor() {
+    super();
+    this.state = { "schedule": [] };
+    this.fetch = this.fetch.bind(this);
+}
+componentDidMount() {
+    this.fetch();
+}
+
+fetch() {
+  const url = 'https://raw.githubusercontent.com/sirjmkitavi/droidCon/master/data/friday.json';
+
+  return axios.get(url)
+    .then(response => {
+      console.log(response)
+        this.setState({
+          schedule: response.data,
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        {this.state.schedule.length < 1 ? (
+          <ActivityIndicator
+            color='black'
+            size={30}
+            style={{ marginTop: 30 }}
+          />
+        ):(
+        <Timeline 
+          style={styles.list}
+          data={this.state.schedule}
+          circleSize={20}
+          circleColor='rgb(45,156,219)'
+          lineColor='#863D96'
+          timeContainerStyle={{ minWidth:52 }}
+          timeStyle={{textAlign: 'center', backgroundColor: "rgba(255,255,255,0)", color:'black', fontFamily: 'DINPro-Bold' }}
+          descriptionStyle={{ color:'gray', fontFamily: 'DINPro-Regular' }}
+          options={{
+            style: { paddingTop: 5 }
+          }}
+          renderFullLine={true}
+        />
+        )}
+      </View>
   );
+  }
 }
 
 const TabNavigator =  createMaterialTopTabNavigator({

@@ -7,12 +7,35 @@ import {
   StyleSheet,
   TouchableOpacity,
   Linking,
+  ActivityIndicator,
 } from 'react-native';
+import axios from 'axios';
 import Header from './common/Header';
 import GridView from 'react-native-super-grid';
 import speakerData from '../../data/speakers.json';
 
 class Speakers extends Component {
+  constructor() {
+    super();
+    this.state = { "speakers": [] };
+    this.fetch = this.fetch.bind(this);
+  }
+  componentDidMount() {
+    this.fetch();
+  }
+  fetch() {
+    const url = 'https://raw.githubusercontent.com/sirjmkitavi/droidCon/master/data/speakers.json';
+
+    return axios.get(url)
+      .then(response => {
+        this.setState({
+          speakers: response.data,
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -21,27 +44,36 @@ class Speakers extends Component {
           style={styles.bgImage}
           source={require('../../assets/img/bg.png')}
         >
-        <View style={{ flex: 1, marginBottom: 67 }}>
-          <GridView
-            itemDimension={140}
-            items={speakerData}
-            style={styles.gridView}
-            renderItem={speaker => (
-              <ImageBackground
-                style={styles.itemContainer}
-                source={{ uri: speaker.pic}}
-              >
-                <TouchableOpacity
-                  style={styles.overlay}
-                  onPress={() => Linking.openURL(`https://twitter.com/${speaker.twitter}`)}
-                />
-                <Text style={styles.itemName}>{speaker.name}</Text>
-                <Text style={styles.itemCode}>{speaker.job}</Text>
-                <Text style={styles.itemCode}>@{speaker.twitter}</Text>
-              </ImageBackground>
-              )}
+        {this.state.speakers.length < 1 ? (
+          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <ActivityIndicator
+              color='black'
+              size={30}
             />
-        </View>
+          </View>
+        ):(
+          <View style={{ flex: 1, marginBottom: 67 }}>
+            <GridView
+              itemDimension={140}
+              items={this.state.speakers}
+              style={styles.gridView}
+              renderItem={speaker => (
+                <ImageBackground
+                  style={styles.itemContainer}
+                  source={{ uri: speaker.pic}}
+                >
+                  <TouchableOpacity
+                    style={styles.overlay}
+                    onPress={() => Linking.openURL(`https://twitter.com/${speaker.twitter}`)}
+                  />
+                  <Text style={styles.itemName}>{speaker.name}</Text>
+                  <Text style={styles.itemCode}>{speaker.job}</Text>
+                  <Text style={styles.itemCode}>@{speaker.twitter}</Text>
+                </ImageBackground>
+                )}
+              />
+          </View>
+        )}
 
         </ImageBackground>
       </View>
