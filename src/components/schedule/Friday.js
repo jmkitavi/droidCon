@@ -19,7 +19,7 @@ export default class Friday extends Component {
   }
 
   fetch() {
-    const url = 'https://raw.githubusercontent.com/sirjmkitavi/droidCon/master/data/thursday.json';
+    const url = 'https://raw.githubusercontent.com/sirjmkitavi/droidCon/master/data/friday.json';
 
     return axios.get(url)
       .then(response => {
