@@ -37,7 +37,7 @@ class Speakers extends Component {
                 />
                 <Text style={styles.itemName}>{speaker.name}</Text>
                 <Text style={styles.itemCode}>{speaker.job}</Text>
-                <Text style={styles.itemCode}>{speaker.twitter}</Text>
+                <Text style={styles.itemCode}>@{speaker.twitter}</Text>
               </ImageBackground>
               )}
             />
