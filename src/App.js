@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 import Home from './components/Home';
-import Schedule from './components/Schedule';
+import Schedule from './components/schedule/Schedule';
 import Speakers from './components/Speakers';
 import Sponsors from './components/Sponsors';
 import Header from './components/common/Header';
