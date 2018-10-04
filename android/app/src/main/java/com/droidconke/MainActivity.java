@@ -1,4 +1,4 @@
-package com.droidconke;
+package com.sirjmkitavi.droidconke;
 
 import com.facebook.react.ReactActivity;
 
